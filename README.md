@@ -9,6 +9,13 @@ Platform: Minecraft Bedrock Edition
 Project Status: Planning and learning — implementation has not yet begun
 Creator: Independent creator from Indonesia
 AI Assistance: ChatGPT assists with planning, documentation, scientific research guidance, technical explanations, and troubleshooting.
+# Estimated Release Date: 2026–2027
+
+I don't know the exact month and day yet. Maybe December 16, 2026, or January 14, 2027?
+
+LET MI TING, LET MI TING uhhhh Janu aray uhhhh deck sember😭🙏
+
+The release date is not confirmed yet. Please be patient while development continues!
 
 ---
 
