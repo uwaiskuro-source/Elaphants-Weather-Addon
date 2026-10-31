@@ -1485,7 +1485,7 @@ JSON
 
 JSON is essential for many Minecraft Bedrock resource-pack and behavior-pack definitions.
 
-The learning objectives include:
+Learning objectives:
 
 - Understanding JSON objects and arrays.
 - Understanding strings, numbers, booleans, and null values.
@@ -1501,7 +1501,7 @@ Molang
 
 Molang is a Minecraft expression language used in supported resource-pack systems.
 
-The learning objectives include:
+Learning objectives:
 
 - Understanding basic expressions.
 - Learning variables and queries.
@@ -1516,7 +1516,7 @@ JavaScript
 
 JavaScript is important for supported Bedrock scripting systems.
 
-The learning objectives include:
+Learning objectives:
 
 - Understanding variables and data types.
 - Learning functions.
@@ -1537,11 +1537,13 @@ The creator currently uses the following applications:
 
 Purpose| Application
 Coding and editing source files| VSCO Droid
-File management| FS File Manager
+File management| MiXplorer
 Block textures and other image assets| Pixel Studio
-Texture editing and additional artwork| ibis Paint
+Additional texture editing and artwork| ibis Paint
 
-These are the creator's currently identified tools, not a guarantee that every application provides every feature needed by EWA.
+File manager update: MiXplorer is the current file-management application. FS File Manager is no longer listed as the current tool.
+
+These applications are the creator's currently identified tools, not a guarantee that every application provides every feature needed by EWA.
 
 C. Recommended Learning Order
 
@@ -1795,9 +1797,9 @@ I am an 11-year-old Grade 6 student in 2026, and I still need to learn JSON, Mol
 My current applications are:
 
 - VSCO Droid — coding and editing.
-- FS File Manager — file management.
+- MiXplorer — file management.
 - Pixel Studio — block textures and other image assets.
-- ibis Paint — texture editing and additional artwork.
+- ibis Paint — additional texture editing and artwork.
 
 There are still thousands of potential features and system ideas that may eventually become part of EWA. They will be documented and developed gradually as my knowledge and technical capabilities improve.
 
