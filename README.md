@@ -1,929 +1,1816 @@
-# Elaphants Weather Addon
-Elephant Weather Add-on (EWA)
+ELAPHANTS WEATHER ADD-ON
 
-Project Vision, Scientific Scope, Technical Roadmap, and Development Documentation
+EWA — Elaphants Weather Add-on
 
-Project Name: Elephant Weather Add-on
-Abbreviation: EWA
-Platform: Minecraft Bedrock Edition
-Project Status: Planning and learning — implementation has not yet begun
-Creator: Independent creator from Indonesia
-AI Assistance: ChatGPT assists with planning, documentation, scientific research guidance, technical explanations, and troubleshooting.
-# Estimated Release Date: 2026–2027
-
-I don't know the exact month and day yet. Maybe December 16, 2026, or January 14, 2027?
-
-LET MI TING, LET MI TING uhhhh Janu aray uhhhh deck sember😭🙏
-
-The release date is not confirmed yet. Please be patient while development continues!
+Project Vision, Scientific Scope, Atmospheric Simulation Architecture, Technical Roadmap, Development Documentation, and Creator Background
 
 ---
 
-0–169: Complete Project Roadmap
+PROJECT INFORMATION
 
-Part I — Project Identity and Principles
+Field| Information
+Project Name| Elaphants Weather Add-on
+Abbreviation| EWA
+Platform| Minecraft Bedrock Edition
+Primary Target| Minecraft Bedrock, including mobile devices
+Creator| Independent creator from Indonesia
+AI Assistance| ChatGPT
+Project Status| Planning and learning — implementation has not yet begun
+Development Approach| Step-by-step, scientifically informed, mobile-aware
+Main Development Focus| Atmospheric simulation, weather, clouds, environmental interaction, and sky phenomena
+Release Date| Not confirmed
 
-0. Project Identity
+Release Date and Development Reality
 
-Elephant Weather Add-on (EWA) is an independently envisioned Minecraft Bedrock Edition project focused on creating a more realistic, dynamic, and atmospheric sky and weather experience.
+Previously mentioned estimated dates:
 
-1. Project Vision
+- December 16, 2026.
+- January 14, 2027.
 
-The long-term vision is to recreate important real-world atmospheric processes, cloud formations, weather systems, and sky phenomena as accurately as Minecraft Bedrock's technical limitations allow.
+Both dates were informal guesses, not official commitments.
 
-2. Project Name and Abbreviation
+There is currently no confirmed release date for EWA.
 
-EWA stands for Elephant Weather Add-on. The name represents the project's identity and its ambitious long-term technical vision.
+LET MI TING, LET MI TING... Uhhhh Janu-aray... Uhhhh deck-sember... 😭🙏
 
-3. Project Status
+Jokes aside, EWA's development time depends on learning, technical research, implementation, testing, optimization, compatibility, documentation, and the actual condition of the project.
 
-EWA is currently in the planning and learning stage. Its proposed systems must not be mistaken for completed, functional, or tested features.
+EWA will not be declared ready simply because a calendar date arrives.
 
-4. Target Platform
+The project should only be released when a suitable version is genuinely functional, tested under documented conditions, sufficiently optimized, and ready for distribution.
 
-The primary target is Minecraft Bedrock Edition, including mobile devices. Compatibility must be evaluated against actual game versions and device limitations.
+---
 
-5. Mobile-First Development
+PROJECT OVERVIEW
 
-Performance on mobile devices is a major priority. Visual complexity must be balanced against memory consumption, frame rate, simulation cost, and rendering limitations.
+Project Vision
 
-6. Scientific Accuracy
+Elaphants Weather Add-on is an independently envisioned Minecraft Bedrock Edition project aiming to create a scientifically informed atmospheric and environmental simulation experience.
 
-Real-world phenomena should be based on credible meteorological, atmospheric-science, geological, and astronomical references whenever applicable.
+Its long-term vision combines:
 
-7. Original Development
+1. A realistic atmospheric and weather system.
+2. A playable meteorological simulator.
+3. An interconnected environmental simulation ecosystem.
+4. Advanced cloud morphology and atmospheric rendering.
+5. Severe-weather and storm observation systems.
+6. Climate, hydrology, and selected geological interactions.
+7. Selected astronomical and atmospheric optical phenomena.
 
-EWA should use original implementations, models, textures, documentation, and other assets wherever possible. Inspiration from existing projects does not authorize copying their code or assets.
+The central objective is to reproduce important real-world atmospheric processes as accurately as Minecraft Bedrock's actual technical capabilities allow.
 
-8. Honest Feature Status
+EWA is not intended to be merely a collection of weather effects.
 
-Features must be labeled accurately as planned, experimental, implemented, tested, or completed. A concept or design document is not proof that a feature works.
+Its long-term design emphasizes interconnected systems in which atmospheric conditions influence cloud formation, cloud development, storms, precipitation, wind, visibility, and environmental interactions.
 
-9. Practical Realism
+Core Project Identity
 
-Realism should prioritize features that produce meaningful visual or environmental differences instead of spending resources on effects that players cannot reasonably notice.
+EWA follows five central principles.
 
-10. Scientific and Creative Separation
+1. Natural Development
 
-Real scientific phenomena must be distinguished from fictional gameplay concepts. Fictional features should never be presented as established meteorology.
+Weather and atmospheric phenomena should emerge from interacting environmental conditions instead of relying entirely on rigid scripted sequences.
 
-Part II — Atmospheric Foundations
+2. Atmospheric Interconnection
 
-11. Atmospheric State
+Global, regional, and local atmospheric systems should influence one another.
 
-The proposed atmosphere system may represent temperature, humidity, pressure, wind, cloud water, and other relevant environmental variables.
+3. Adaptive Structures
 
-12. Atmospheric Pressure
+Clouds and weather systems should be capable of changing their structure according to their simulated environment.
 
-Pressure differences may influence wind direction, convergence, storm development, and other simulated atmospheric processes.
+4. Environmental Interaction
 
-13. Temperature
+Weather should have meaningful interactions with terrain, vegetation, buildings, visibility, and other environmental elements.
 
-Temperature may affect condensation, cloud formation, atmospheric stability, and precipitation-related processes.
+5. Realism Within Technical Limits
 
-14. Humidity
+Scientific accuracy is a major objective, but Bedrock compatibility, performance, memory usage, and technical feasibility must remain part of every development decision.
 
-Humidity should influence the availability of atmospheric moisture and the potential for cloud formation.
+---
 
-15. Atmospheric Stability
+PROJECT STATUS AND DEVELOPMENT HONESTY
 
-Stable and unstable atmospheric conditions should produce different cloud-development and convection behaviors.
+EWA is currently in the planning and learning stage.
 
-16. Vertical Air Motion
+The systems described in this document are proposed designs, research objectives, and development goals. They are not evidence of completed or working features.
 
-Updrafts and downdrafts should represent rising and sinking air, which are important to convective clouds and thunderstorms.
+The following development-status categories must be used consistently:
 
-17. Wind Fields
+Status| Meaning
+Planned| A feature has been proposed but its implementation has not been established.
+Designed| Its intended behavior, requirements, and architecture have been documented.
+Experimental| A technical experiment or prototype exists but is not yet considered reliable.
+Implemented| A working implementation has been created.
+Tested| The implementation has been tested under documented conditions.
+Completed| The feature has satisfied its defined acceptance criteria.
 
-Wind should be represented as a directional field with configurable speed and direction, rather than as unrelated movement assigned independently to every cloud.
+A valid file import does not automatically mean that a feature works.
 
-18. Wind Shear
+A visual demonstration does not automatically prove that the underlying simulation is scientifically accurate.
 
-Differences in wind speed or direction with height may influence storm organization and cloud structure.
+A concept document does not count as an implementation.
 
-19. Convergence
+A successful test on one device does not guarantee compatibility with every Bedrock platform.
 
-Air flowing together in a region may support rising motion and localized cloud development.
+---
 
-20. Divergence
+THREE PLAYER-VISIBILITY CLASSIFICATIONS
 
-Air spreading apart may represent an important part of large-scale atmospheric motion, depending on the simulated conditions.
+Every player-facing feature should receive one of three visibility classifications.
 
-21. Air Masses
+These classifications describe how noticeable a feature is during gameplay. They do not describe implementation difficulty, scientific importance, or development priority.
 
-Different air masses may be represented through their temperature, moisture, and movement characteristics.
+[Noticeable]
 
-22. Fronts
+A feature that is directly and clearly observable by the player under its intended conditions.
 
-Cold fronts, warm fronts, stationary fronts, and occluded fronts may influence cloud patterns and weather transitions.
+Examples:
 
-23. Boundary Layers
+- A visible tornado.
+- A large cumulonimbus cloud.
+- Heavy localized rainfall.
+- A visible fog bank.
+- A major lightning flash.
 
-Near-surface conditions may differ from conditions higher in the atmosphere, affecting fog, low clouds, and convection.
+[Moderately noticeable]
 
-24. Terrain Effects
+A feature that can be observed under suitable conditions, lighting, distance, proximity, or player interaction.
 
-Mountains, valleys, plains, coastlines, and other terrain features may influence local wind and cloud formation.
+Examples:
 
-25. Day-Night Atmospheric Changes
+- Subtle cloud-layer movement.
+- A developing gust front.
+- A visible rain boundary.
+- A gradual change in surface wetness.
+- A local wind difference between terrain regions.
 
-Lighting and selected environmental conditions should change naturally between daytime, sunset, nighttime, and sunrise.
+[Subtle]
 
-Part III — Cloud Classification and Morphology
+A small environmental detail that contributes to immersion but is not necessarily obvious during ordinary gameplay.
 
-26. Cloud Classification
+Examples:
 
-EWA should aim to represent the major recognized cloud genera and their meaningful variations.
+- Slight variations in atmospheric color.
+- Small changes in vegetation movement.
+- Gradual surface drying.
+- Minor changes in cloud-edge structure.
+- Small differences in environmental moisture.
 
-27. Cirrus Clouds
+Classification rule: Backend-only operations that cannot produce any observable player-facing consequence should not be counted as standalone player-visible features. They should instead be documented as technical requirements or internal systems.
 
-Thin, high-altitude clouds should have delicate, fibrous structures instead of resembling low, dense cloud masses.
+---
 
-28. Cirrostratus Clouds
+PART I — PROJECT IDENTITY AND DEVELOPMENT PRINCIPLES
 
-Broad, translucent high clouds may cover large portions of the sky and contribute to optical phenomena such as halos.
+0. Project Identity — [Noticeable]
 
-29. Cirrocumulus Clouds
+EWA is an independently envisioned Minecraft Bedrock Edition project focused on atmospheric realism, weather simulation, environmental interactions, and advanced sky phenomena.
 
-Small, high-level cloud elements may form organized patterns across the sky.
+1. Project Vision — [Noticeable]
 
-30. Altostratus Clouds
+The long-term vision is to develop an interconnected simulation ecosystem covering atmospheric processes, cloud morphology, severe weather, climate, environmental hazards, and selected astronomical phenomena.
 
-Middle-level layered clouds should be capable of producing broad, relatively uniform sky coverage.
+2. Project Name and Abbreviation — [Noticeable]
 
-31. Altocumulus Clouds
+EWA stands for Elaphants Weather Add-on. The name represents the project's identity and long-term development ambitions.
 
-Middle-level cloud patches may vary in size, spacing, thickness, and arrangement.
+3. Project Status — [Noticeable]
 
-32. Stratus Clouds
+EWA remains in planning and learning. No proposed feature should be described as functional until an implementation has been created and tested.
 
-Low, uniform cloud layers should produce a comparatively flat and continuous appearance.
+4. Target Platform — [Noticeable]
 
-33. Stratocumulus Clouds
+The primary target is Minecraft Bedrock Edition, including Android and other supported platforms. Each feature must be evaluated against the actual capabilities of its targeted Bedrock version.
 
-Low cloud fields may contain rounded masses, gaps, and broad horizontal structures.
+5. Mobile-First Development — [Noticeable]
 
-34. Nimbostratus Clouds
+Development must consider frame rate, frame-time stability, memory consumption, particle counts, entity counts, simulation frequency, rendering complexity, block updates, and large-scale weather workloads.
 
-Thick precipitation-bearing layers should be able to obscure much of the sky during widespread precipitation.
+6. Scientific Accuracy — [Noticeable]
 
-35. Cumulus Clouds
+Meteorological, atmospheric, geological, and astronomical systems should be based on credible scientific references. Simplified simulations must be identified as approximations.
 
-Convective clouds should vary in size, vertical development, and degree of atmospheric instability.
+7. Original Development — [Noticeable]
 
-36. Cumulus Humilis
+EWA should use original code, textures, models, documentation, and other assets wherever possible. Existing projects may provide inspiration, but their assets and code must not be copied without appropriate permission and licensing.
+
+8. Honest Feature Status — [Noticeable]
+
+Development documentation must distinguish planned, designed, experimental, implemented, tested, and completed features.
+
+9. Practical Realism — [Noticeable]
+
+Development should prioritize meaningful visual and environmental realism instead of spending excessive resources on effects with little observable value.
+
+10. Scientific and Fictional Separation — [Noticeable]
+
+Scientifically documented phenomena and fictional gameplay mechanics must be clearly distinguished. Fictional phenomena must never be presented as established meteorology.
+
+---
+
+PART II — ATMOSPHERIC FOUNDATIONS
+
+11. Atmospheric State — [Moderately noticeable]
+
+Represent atmospheric conditions using interconnected variables such as temperature, humidity, pressure, wind velocity, vertical motion, cloud water, stability, precipitation, visibility, and selected electrical properties.
+
+12. Atmospheric Pressure — [Moderately noticeable]
+
+Pressure differences may influence wind movement, convergence, divergence, and storm organization.
+
+13. Temperature — [Moderately noticeable]
+
+Temperature should influence condensation potential, atmospheric stability, cloud development, and precipitation processes.
+
+14. Humidity — [Moderately noticeable]
+
+Humidity should influence atmospheric moisture availability, condensation potential, fog, and cloud development.
+
+15. Atmospheric Stability — [Moderately noticeable]
+
+Stable and unstable conditions should produce different convective behaviors and cloud-development characteristics.
+
+16. Vertical Air Motion — [Moderately noticeable]
+
+Updrafts and downdrafts should represent rising and sinking air and influence convection, precipitation, and storm organization.
+
+17. Three-Dimensional Wind Fields — [Noticeable]
+
+Wind should be represented as a coherent three-dimensional velocity field, incorporating horizontal direction, horizontal speed, vertical motion, shear, gusts, convergence, divergence, terrain effects, and storm-generated outflow.
+
+18. Wind Shear — [Moderately noticeable]
+
+Wind speed and direction may change with altitude. These differences should influence storm organization and cloud morphology where supported.
+
+19. Convergence — [Moderately noticeable]
+
+Air flowing together may contribute to localized rising motion and cloud development.
+
+20. Divergence — [Moderately noticeable]
+
+Air spreading apart may represent an important component of atmospheric circulation.
+
+21. Air Masses — [Moderately noticeable]
+
+Different air masses should have distinguishable temperature, moisture, stability, and movement characteristics.
+
+22. Atmospheric Fronts — [Noticeable]
+
+Cold, warm, stationary, and occluded fronts may influence regional cloud patterns and weather transitions.
+
+23. Boundary Layers — [Moderately noticeable]
+
+Near-surface atmospheric conditions may differ from those at higher altitudes, influencing fog, low clouds, surface heating, and convection.
+
+24. Terrain Effects — [Noticeable]
+
+Mountains, valleys, plains, coastlines, forests, deserts, and urban environments may influence local atmospheric behavior.
+
+25. Day-Night Atmospheric Changes — [Moderately noticeable]
+
+Daytime heating and nighttime cooling should influence selected atmospheric processes, including convection, stability, fog formation, and local wind circulation.
+
+---
+
+PART III — CLOUD CLASSIFICATION AND MORPHOLOGY
+
+26. Cloud Classification — [Noticeable]
+
+EWA aims to represent the major recognized cloud genera and important cloud variations. Cloud identity should depend on atmospheric conditions rather than permanently fixed models.
+
+27. Cirrus Clouds — [Noticeable]
+
+High-altitude clouds should display delicate, fibrous structures.
+
+28. Cirrostratus Clouds — [Noticeable]
+
+Broad, translucent high clouds may cover large portions of the sky and support optical effects such as halos.
+
+29. Cirrocumulus Clouds — [Noticeable]
+
+Small high-level cloud elements may form organized patterns.
+
+30. Altostratus Clouds — [Noticeable]
+
+Middle-level layered clouds should support broad and relatively uniform sky coverage.
+
+31. Altocumulus Clouds — [Noticeable]
+
+Middle-level cloud patches should vary in size, spacing, thickness, and arrangement.
+
+32. Stratus Clouds — [Noticeable]
+
+Low uniform cloud layers should have a comparatively flat and continuous appearance.
+
+33. Stratocumulus Clouds — [Noticeable]
+
+Low cloud fields should contain rounded masses, gaps, and broad horizontal structures.
+
+34. Nimbostratus Clouds — [Noticeable]
+
+Thick precipitation-bearing layers should be capable of obscuring large portions of the sky.
+
+35. Cumulus Clouds — [Noticeable]
+
+Convective clouds should vary in size, vertical development, and atmospheric support.
+
+36. Cumulus Humilis — [Noticeable]
 
 Small fair-weather cumulus clouds should have limited vertical development.
 
-37. Cumulus Mediocris
+37. Cumulus Mediocris — [Noticeable]
 
-Moderately developed cumulus clouds should exhibit stronger vertical growth than humilis clouds.
+Moderately developed cumulus clouds should display stronger vertical growth.
 
-38. Cumulus Congestus
+38. Cumulus Congestus — [Noticeable]
 
-Towering cumulus clouds should display substantial vertical development and may evolve into thunderstorms under suitable conditions.
+Towering cumulus clouds should exhibit substantial vertical development and may evolve into thunderstorms under suitable conditions.
 
-39. Cumulonimbus Clouds
+39. Cumulonimbus Clouds — [Noticeable]
 
-Thunderstorm clouds should support deep vertical structures, precipitation, and potentially severe-weather features.
+Cumulonimbus clouds should support deep vertical structures, precipitation, strong convection, and potentially severe-weather features.
 
-40. Anvil Clouds
+40. Anvil Clouds — [Noticeable]
 
-Mature cumulonimbus clouds should be able to spread outward near the upper troposphere, forming characteristic anvil structures.
+Mature cumulonimbus clouds should be able to spread horizontally near the upper troposphere.
 
-41. Overshooting Tops
+41. Overshooting Tops — [Noticeable]
 
-Strong updrafts may push cloud turrets above the surrounding anvil before they weaken or spread.
+Strong updrafts may push cloud turrets above the surrounding anvil.
 
-42. Mammatus Clouds
+42. Mammatus Clouds — [Noticeable]
 
 Rounded pouch-like structures may appear beneath suitable cloud bases or anvil regions.
 
-43. Lenticular Clouds
+43. Lenticular Clouds — [Noticeable]
 
-Terrain-induced airflow may produce smooth, lens-shaped clouds near mountain ranges under appropriate conditions.
+Terrain-associated airflow may produce smooth lens-shaped clouds.
 
-44. Banner Clouds
+44. Banner Clouds — [Noticeable]
 
-Localized clouds may form near mountain peaks under suitable airflow and moisture conditions.
+Localized clouds may form near mountain peaks under suitable conditions.
 
-45. Orographic Clouds
+45. Orographic Clouds — [Noticeable]
 
-Air forced upward by terrain may cool and condense, producing terrain-associated cloud formations.
+Air forced upward by terrain may cool and condense, producing terrain-associated clouds.
 
-46. Wave Clouds
+46. Wave Clouds — [Noticeable]
 
-Atmospheric gravity waves may produce repeating cloud bands or other wave-related structures.
+Atmospheric gravity waves may produce repeating cloud bands and wave-related formations.
 
-47. Roll Clouds
+47. Roll Clouds — [Noticeable]
 
-Long, horizontal, tube-shaped clouds may be represented as a distinct formation rather than automatically classified as shelf clouds.
+Long horizontal tube-shaped clouds should be represented as a distinct formation.
 
-48. Morning Glory Clouds
+48. Morning Glory Clouds — [Noticeable]
 
-Rare roll-cloud formations associated with particular atmospheric conditions should be treated as specialized phenomena, not ordinary daily weather.
+Morning Glory formations should be treated as specialized atmospheric phenomena rather than ordinary daily cloud formations.
 
-49. Fog and Mist
+49. Fog and Mist — [Noticeable]
 
 Near-surface suspended water droplets should reduce visibility according to their density and environmental conditions.
 
-50. Cloud Lifecycle
+50. Cloud Development — [Noticeable]
 
-Clouds should ideally evolve through formation, growth, maturity, weakening, and dissipation instead of appearing only as permanently static shapes.
+Clouds should support formation, growth, maturity, weakening, fragmentation, merging, and dissipation as descriptive states. These states must not become mandatory scripted sequences.
 
-Part IV — Adaptive Cloud Rendering
+---
 
-51. Custom Sky Appearance
+PART IV — ADAPTIVE CLOUD GEOMETRY AND RENDERING
 
-EWA aims to develop a custom sky and cloud appearance that can reduce dependence on the default Fancy Clouds rendering, subject to Bedrock's actual rendering capabilities.
+51. Custom Sky Appearance — [Noticeable]
 
-52. Volumetric Appearance
+EWA aims to develop a custom sky and cloud appearance that reduces dependence on Minecraft's default Fancy Clouds. Rendering feasibility must be tested on actual Bedrock versions.
 
-Clouds should appear to possess depth and internal structure rather than looking like flat cutouts or simple stacked discs.
+52. Three-Dimensional Cloud Geometry — [Noticeable]
 
-53. Fake Raymarch Particle Volume
+Clouds should possess depth and internal structure. Flat cutouts and simple stacked discs are not the intended final appearance.
 
-One proposed approach is a particle-based approximation of volumetric cloud rendering. This is a visual technique, not a claim that true ray marching has been implemented.
+53. Cloud Lobe Geometry System — [Noticeable]
 
-54. Particle Shape
+The proposed cloud-formation concept uses three-dimensional cloud lobes. Lobes may be rounded, oval, elongated, irregular, flattened, bulging, or adaptively deformed.
 
-Particle shapes and textures should be selected to produce coherent cloud structures while minimizing visible repetition.
+54. Cloud Lobe Assembly — [Noticeable]
 
-55. Particle Distribution
+Large formations, particularly cumulonimbus clouds, may consist of multiple connected or overlapping lobes that collectively form a coherent cloud.
 
-Particles should be distributed according to the intended cloud structure rather than scattered randomly throughout a large volume.
+55. Adaptive Lobe Dimensions — [Moderately noticeable]
 
-56. Cloud Width
+Each lobe may have its own width, height, length, and shape.
 
-Cloud width should depend on the cloud type, atmospheric conditions, and the selected simulation parameters.
+56. Lobe Growth — [Noticeable]
 
-57. Cloud Length
+Existing lobes may gradually enlarge and change shape. Existing geometry should be reused for growth when appropriate.
 
-Horizontal cloud extent should adapt to the intended morphology, wind field, and lifecycle stage.
+57. Lobe Persistence — [Moderately noticeable]
 
-58. Cloud Height
+Some lobes may remain relatively unchanged while other parts of the cloud grow or weaken.
 
-Cloud vertical dimensions should vary by cloud type and environmental conditions rather than using one universal height.
+58. New Lobe Formation — [Noticeable]
 
-59. Cloud Density
+New lobes may emerge where atmospheric and geometric conditions support additional development. Their creation should not be arbitrary or excessively frequent.
 
-Cloud density should influence opacity, shading, internal visibility, and the apparent thickness of the cloud.
+59. Internal Lobe Removal — [Subtle]
 
-60. Cloud Structure
+Lobes that become completely internal to another structure may be reduced or removed from active geometry when they no longer contribute to visible cloud structure.
 
-Clouds should have distinguishable regions, such as edges, cores, turrets, layers, and anvils where appropriate.
+60. Cloud Geometry Optimization — [Moderately noticeable]
 
-61. Cloud Growth
+The system should investigate merging, hiding, or removing redundant geometry without damaging the visible cloud.
 
-New cloud structures should emerge gradually where practical, creating a visual impression of atmospheric development.
+61. Cloud Morphology — [Noticeable]
 
-62. Cloud Dissipation
+Overall cloud shape should emerge from lobe arrangement, dimensions, deformation, and interaction. Cumulonimbus clouds may develop cauliflower-like bulges, turrets, overshooting tops, and anvils.
 
-Clouds should gradually weaken, shrink, disperse, or change form when their supporting conditions disappear.
+62. Adaptive Cloud Types — [Noticeable]
 
-63. Continuous Color Variation
+A common cloud-formation system should support different cloud types. Atmospheric conditions determine potential cloud identity while geometry develops according to the environment.
 
-Cloud colors should respond to lighting and atmospheric conditions across a broad range rather than being restricted to only a few fixed shades.
+63. Cloud Width — [Noticeable]
 
-64. Cloud Shading
+Cloud width should depend on structure, cloud type, atmospheric conditions, and development.
 
-Cloud shading should communicate depth, density, sunlight direction, and the relationship between illuminated and shadowed regions.
+64. Cloud Length — [Noticeable]
 
-65. Adaptive Cloud Height
+Horizontal cloud extent should adapt to morphology and wind conditions.
 
-Cloud altitude should depend on the intended cloud type and environmental conditions. Any simplified altitude model must be clearly distinguished from a full atmospheric simulation.
+65. Cloud Height — [Noticeable]
 
-66. Adaptive Cloud Volume
+Vertical cloud dimensions should depend on cloud type and atmospheric support.
 
-Cloud volume should change in response to the proposed atmospheric state and lifecycle, subject to rendering and simulation constraints.
+66. Cloud Density — [Noticeable]
 
-67. Smooth Cloud Movement
+Cloud density should influence opacity, shading, internal appearance, and visible thickness.
 
-Clouds should move coherently with their assigned wind fields. Visible movement should avoid unnecessary jumps, flickering, or sudden shape replacement.
+67. Cloud Structure — [Noticeable]
 
-68. Persistent Cloud Identity
+Clouds may contain edges, cores, turrets, bulges, layers, anvils, and precipitation-bearing regions. Not every cloud should contain every component.
 
-A proposed design goal is to preserve cloud identity during movement instead of continuously deleting one cloud and generating an unrelated replacement ahead of it. Technical feasibility requires testing.
+68. Cloud Dissipation — [Noticeable]
 
-69. Cloud Morphing
+Clouds should gradually shrink, deform, fragment, disperse, or disappear as their supporting conditions change.
 
-Cloud shapes may change gradually over time, allowing formations to evolve without abrupt transitions whenever practical.
+69. Cloud Identity and Persistence — [Moderately noticeable]
 
-70. Environmental Adaptation
+Clouds should preserve their identity while moving and evolving. Repeatedly deleting and replacing clouds should be avoided when it causes visible discontinuities.
 
-Cloud appearance should reflect local conditions, including terrain, moisture, wind, temperature, and storm development where those variables are simulated.
+70. Cloud Movement — [Noticeable]
 
-Part V — Cloud Lighting and Color
+Clouds should move coherently with their assigned wind fields, avoiding unnecessary jumps, flickering, and abrupt replacement.
 
-71. Daytime Cloud Colors
+---
 
-Daytime cloud colors should depend on illumination, cloud thickness, atmospheric conditions, and the surrounding sky.
+PART V — CLOUD LIGHTING AND COLOR
 
-72. White Clouds
+71. Atmospheric Lighting — [Noticeable]
 
-Well-illuminated cloud regions should retain a bright appearance without losing all visible structural detail.
+Cloud lighting should respond to sunlight direction, illumination intensity, time of day, atmospheric conditions, and cloud structure.
 
-73. Slightly Dark White
+72. Directional Sun Illumination — [Moderately noticeable]
 
-Subtle intermediate shading should help distinguish nearby cloud regions without creating harsh artificial boundaries.
+A proposed Sun Direction Indicator should estimate the sun's direction and determine which cloud surfaces receive direct illumination.
 
-74. Gray Clouds
+73. Illuminated Cloud Regions — [Noticeable]
 
-Gray tones should represent reduced illumination, cloud thickness, shadowing, or other appropriate conditions.
+Cloud surfaces facing the light source should receive stronger illumination where appropriate.
 
-75. Dark Gray Clouds
+74. Shadowed Cloud Regions — [Noticeable]
 
-Dark gray regions should communicate denser or more deeply shadowed cloud structures.
+Cloud regions facing away from the light source or obscured by other structures should appear darker.
 
-76. Near-Black Clouds
+75. Cloud Self-Shadowing — [Noticeable]
 
-Extremely dark cloud regions may occur under dramatic lighting and severe storm conditions, but should not be used indiscriminately.
+Cloud structures should influence the apparent lighting of other cloud regions. Approximation may be necessary if full volumetric shadowing is unavailable.
 
-77. Sunrise and Sunset Colors
+76. Daytime Cloud Colors — [Noticeable]
 
-Cloud colors should respond to the changing direction and color of sunlight during sunrise and sunset.
+Cloud colors should depend on illumination, density, atmospheric conditions, and surrounding sky color.
 
-78. Orange Cloud Palette
+77. White Clouds — [Noticeable]
 
-A proposed palette contains seven orange-related levels, ranging from slightly orange to very dark orange, while retaining distinctions from black storm shading.
+Well-illuminated cloud regions should remain bright while retaining structural detail.
 
-79. Night Cloud Colors
+78. Intermediate Gray Values — [Noticeable]
 
-A proposed nighttime palette includes dark white, gray, dark gray, black, darker black, and extremely dark black-like tones.
+Subtle shading should distinguish cloud structures without artificial, excessively harsh boundaries.
 
-80. Directional Illumination
+79. Dark and Near-Black Clouds — [Noticeable]
 
-Cloud surfaces facing the light source should appear differently from surfaces turned away from it.
+Dark cloud regions should represent suitable combinations of thickness, shadowing, and illumination. Near-black colors should not be applied indiscriminately.
 
-81. Sunrise and Sunset Direction
+80. Sunrise and Sunset Colors — [Noticeable]
 
-Clouds should ideally reflect the actual direction of the sun instead of coloring every visible cloud surface uniformly orange.
+Cloud colors should respond to sunlight direction and color.
 
-82. Lightning Illumination
+81. Directional Sunset Illumination — [Noticeable]
 
-Lightning should illuminate nearby cloud structures when technically feasible, producing a brief flash rather than a permanently glowing cloud.
+Clouds should not simply become uniformly orange. Illumination should depend on the direction of sunlight and cloud orientation.
 
-83. Storm-Light Effects
+82. Orange Cloud Palette — [Noticeable]
 
-Lightning illumination should help reveal cloud depth and storm structure without making the entire sky unnaturally bright.
+A proposed visual range contains seven orange-related levels, from slightly orange to very dark orange. These should remain distinguishable from ordinary storm shading.
 
-84. Environmental Color Reflection
+83. Nighttime Cloud Colors — [Noticeable]
 
-Greenish, bluish, or other environmental tints should arise from an appropriate lighting approximation rather than simply applying a flat color to every cloud.
+A proposed nighttime range includes dark white, gray, dark gray, black, and progressively darker shades, depending on available illumination.
 
-85. Fine Color Gradients
+84. Lightning Illumination — [Noticeable]
 
-Color transitions should be smooth enough to avoid obvious bands between predefined brightness levels.
+Lightning should briefly illuminate nearby cloud structures where technically feasible.
 
-86. Large Color Range
+85. Storm Lighting Effects — [Noticeable]
 
-EWA has an ambitious design goal of supporting millions of possible cloud color appearances through combinations of lighting, tint, and shading. This is a target, not a verified rendering capability.
+Lightning should reveal cloud depth and structure without permanently glowing or excessively brightening the entire sky.
 
-87. Compatibility with Lighting Add-ons
+86. Environmental Color Reflection — [Moderately noticeable]
 
-Potential compatibility with external lighting or visual add-ons should be evaluated. Compatibility cannot be guaranteed without testing.
+Greenish, bluish, and other atmospheric tints may be represented through suitable lighting approximations.
 
-88. Cloud Sound Effects
+87. Continuous Color Variation — [Noticeable]
 
-Weather-related sounds should correspond to suitable events, distances, and environmental conditions without excessive repetition.
+Cloud shading should support smooth transitions instead of relying entirely on a small set of fixed color levels.
 
-89. Visual Consistency
+88. Large Color Range — [Moderately noticeable]
 
-Cloud lighting, colors, shadows, and movement should work together to create a coherent sky rather than a collection of disconnected effects.
+The design goal is to support a broad range of possible cloud appearances through combinations of illumination, tint, opacity, and shading. Millions of possible combinations are an ambition, not a verified technical capability.
 
-Part VI — Thunderstorms and Severe Weather
+89. Visual Compatibility — [Moderately noticeable]
 
-90. Thunderstorm Development
+Compatibility with other lighting and visual add-ons must be evaluated through testing.
 
-Thunderstorms should ideally develop from suitable atmospheric conditions rather than appearing without any environmental explanation.
+90. Cloud Sound Effects — [Subtle]
 
-91. Single-Cell Storms
+Cloud-related weather audio should be associated with suitable environmental conditions and events rather than repeated without context.
 
-Simple thunderstorms may be represented as localized convective systems with a limited lifecycle and relatively uncomplicated structure.
+---
 
-92. Multicell Storms
+PART VI — THUNDERSTORMS AND SEVERE WEATHER
 
-Multiple convective cells may coexist, strengthen, weaken, and influence one another.
+91. Natural Thunderstorm Development — [Noticeable]
 
-93. Supercell Architecture
+Thunderstorms should emerge from suitable atmospheric conditions rather than relying entirely on random spawning or a rigid universal sequence.
 
-Supercells should be modeled as organized thunderstorms featuring persistent rotating updrafts when the simulated conditions support them.
+92. Independent Storm Cells — [Noticeable]
 
-94. Mesocyclones
+Individual storm cells should maintain their own local atmospheric and structural characteristics.
 
-A rotating storm updraft may be represented as a mesocyclone. It should not automatically be treated as a tornado.
+93. Storm Cell Interaction — [Noticeable]
 
-95. Wall Clouds
+Nearby cells may influence one another through outflow, downdrafts, updrafts, gust fronts, wind changes, convergence, and precipitation interactions.
 
-Wall clouds may develop beneath suitable regions of a supercell, particularly near areas of persistent rotation and inflow.
+94. Multicell Storms — [Noticeable]
 
-96. Shelf Clouds
+Multiple cells may coexist, develop, weaken, and interact.
 
-Shelf clouds should appear along suitable gust fronts and outflow boundaries, with broad horizontal structure and a distinct leading edge.
+95. Squall Lines — [Noticeable]
 
-97. Updraft Regions
+Storm cells may organize into larger linear systems when environmental conditions support such organization.
 
-Strong rising air should support cloud growth and the transport of moisture and precipitation particles.
+96. Supercell Architecture — [Noticeable]
 
-98. Downdraft Regions
+Supercells should be represented as organized thunderstorms with persistent rotating updrafts under suitable conditions.
 
-Descending air should influence precipitation, cold outflow, and storm evolution.
+97. Mesocyclones — [Noticeable]
 
-99. Storm Inflow
+A rotating storm updraft may be represented as a mesocyclone. A mesocyclone must not automatically generate a tornado.
 
-Warm, moist air entering a storm may influence its growth and organization.
+98. Wall Clouds — [Noticeable]
 
-100. Storm Outflow
+Wall clouds may develop beneath suitable regions of organized storms.
 
-Rain-cooled air spreading away from a storm may create gust fronts and influence new convection.
+99. Shelf Clouds — [Noticeable]
 
-101. Forward-Flank Regions
+Shelf clouds should form along suitable gust fronts and outflow boundaries.
 
-A storm's forward-flank precipitation region may contain substantial rain or hail depending on the simulated storm structure.
+100. Flanking Lines — [Noticeable]
 
-102. Rear-Flank Regions
+Flanking-line cloud structures may develop alongside suitable organized thunderstorms.
 
-A rear-flank region may be represented where appropriate in organized rotating storms, with its own airflow and precipitation characteristics.
+101. Overshooting Tops — [Noticeable]
 
-103. Hail Cores
+Strong updrafts may produce cloud turrets extending above the surrounding anvil.
 
-Hail-bearing storm regions should be visually and functionally distinguishable from ordinary rainfall.
+102. Updraft Regions — [Moderately noticeable]
 
-104. Hail Accumulation
+Rising air should transport moisture and precipitation particles and influence cloud growth.
 
-Hail may accumulate on surfaces if the system can support it without excessive world updates or memory use.
+103. Downdraft Regions — [Moderately noticeable]
 
-105. Hail Damage
+Descending air should influence precipitation, cold outflow, and storm organization.
 
-Hail damage should depend on hail properties, impact conditions, and the durability of affected objects.
+104. Storm Inflow — [Moderately noticeable]
 
-106. Rainfall Intensity
+Air entering a storm should influence its development and organization.
 
-Rainfall should vary in intensity and distribution rather than remaining identical throughout a storm.
+105. Storm Outflow — [Noticeable]
 
-107. Rain Shafts
+Rain-cooled air spreading away from a storm may produce gust fronts and influence new convection.
 
-Dense precipitation regions should form recognizable rain shafts beneath suitable cloud structures.
+106. Forward-Flank Regions — [Noticeable]
 
-108. Lightning Distribution
+Forward-flank precipitation regions may contain substantial rainfall or hail.
 
-Lightning frequency and location should be associated with the simulated storm's development, while remaining an approximation of real electrical processes.
+107. Rear-Flank Regions — [Moderately noticeable]
 
-109. Thunder Timing
+Rear-flank airflow and precipitation structures may be represented in suitable rotating storms.
 
-Thunder sounds should occur after lightning with a delay that can approximate the distance between the player and the lightning strike.
+108. Hail Cores — [Noticeable]
 
-110. Storm Dissipation
+Hail-bearing regions should be distinguishable from ordinary rainfall.
 
-Storms should weaken as their simulated support diminishes, rather than disappearing only because a timer expires.
+109. Storm Dissipation — [Noticeable]
 
-Part VII — Tornado Systems
+Storms should weaken as their simulated atmospheric support diminishes. Their internal development states must not force every storm to follow identical phases.
 
-111. Tornado Formation
+---
 
-Tornado formation should depend on suitable simulated conditions. A rotating cloud or mesocyclone alone should not automatically create a tornado.
+PART VII — LIGHTNING AND ELECTRICAL PROCESSES
 
-112. Tornado Lifecycle
+110. Charge Separation — [Moderately noticeable]
 
-The proposed lifecycle includes formation, organization, mature circulation, weakening, and dissipation.
+Lightning should originate from an approximation of electrical charge separation within storm clouds.
 
-113. Rope Tornadoes
+111. Ice-Particle Interactions — [Subtle]
 
-Narrow, elongated tornadoes should be supported as a distinct visual form, including curved or irregular shapes.
+Interactions between ice particles, graupel, and other hydrometeors may contribute to simulated electrical charge separation.
 
-114. Cone Tornadoes
+112. Electrical Field — [Moderately noticeable]
 
-Cone tornadoes should widen toward the ground or exhibit a tapered circulation profile.
+The system may represent an approximate electrical field within suitable storm regions.
 
-115. Stovepipe Tornadoes
+113. Intracloud Lightning — [Noticeable]
 
-Stovepipe tornadoes should have a comparatively broad, column-like appearance.
+Lightning may occur within a single cloud.
 
-116. Wedge Tornadoes
+114. Cloud-to-Ground Lightning — [Noticeable]
 
-Wedge tornadoes should occupy a broad visible area, although apparent width must not be treated as a reliable measure of actual intensity.
+Lightning may discharge between a storm cloud and the ground.
 
-117. Bowl-Shaped Tornadoes
+115. Cloud-to-Cloud Lightning — [Noticeable]
 
-Broad upper circulation with a narrower lower region may be represented as one possible tornado morphology.
+Lightning may occur between separate cloud regions under suitable conditions.
 
-118. Elephant-Trunk Tornadoes
+116. Positive Cloud-to-Ground Lightning — [Noticeable]
 
-A narrow, curved or elongated lower funnel may produce an elephant-trunk-like appearance under suitable conditions.
+Positive cloud-to-ground discharges may be represented as a distinct electrical event.
 
-119. Hourglass Tornadoes
+117. Lightning Distribution — [Noticeable]
 
-A funnel with a narrower middle section and wider upper or lower portions may be represented as a specialized shape.
+Lightning location and frequency should be influenced by simulated electrical and storm conditions.
 
-120. Spiral-Like Tornadoes
+118. Thunder Timing — [Noticeable]
 
-Irregular twisting structures may be used to suggest complex circulation, provided the effect does not misrepresent every tornado as having a visible spiral.
+Thunder should follow lightning with a delay approximating the distance between the player and the discharge.
 
-121. Irregular Tornadoes
+119. Lightning Illumination — [Noticeable]
 
-Tornadoes should support nonuniform edges, changing width, and asymmetrical shapes where appropriate.
+Lightning should briefly illuminate nearby cloud structures and the environment where supported.
 
-122. Multivortex Tornadoes
+120. Electrical Simulation Limitations — [Moderately noticeable]
 
-A parent tornado circulation may contain several smaller subvortices moving around its larger circulation.
+Electrical activity must be identified as an approximation unless the implementation supports more detailed physical modeling.
 
-123. Twin Tornadoes
+---
 
-Multiple tornadoes may occur in the same general storm environment when the simulated conditions support separate circulations.
+PART VIII — PRECIPITATION AND HYDROMETEOROLOGY
 
-124. Satellite Tornadoes
+121. Cloud Water — [Moderately noticeable]
 
-A smaller tornado may orbit or move near a larger tornado circulation in a suitable storm scenario.
+Cloud moisture should influence precipitation potential.
 
-125. Rain-Wrapped Tornadoes
+122. Condensation — [Subtle]
 
-Precipitation may obscure tornado visibility, creating dangerous-looking conditions without requiring an artificially invisible tornado texture.
+The system should approximate how atmospheric moisture condenses under suitable conditions.
 
-126. Tornado Motion
+123. Droplet Growth — [Subtle]
 
-Tornadoes should move according to the motion of their parent storm and any simplified environmental steering field.
+Cloud droplets may grow through simplified microphysical processes.
 
-127. Tornado Path
+124. Collision and Coalescence — [Subtle]
 
-A tornado's path should respond to its movement and the simulated environment rather than being limited to a fixed straight line.
+Droplet interactions may contribute to rainfall development.
 
-128. Tornado Sway
+125. Rainfall Intensity — [Noticeable]
 
-Narrow tornadoes may bend, lean, or change orientation according to simulated airflow and visual effects.
+Rainfall should vary according to cloud structure and simulated atmospheric conditions.
 
-129. Tornado Debris
+126. Drizzle — [Noticeable]
 
-Debris may circulate around the tornado, with particle motion influenced by simplified rotational flow and environmental interactions.
+Light precipitation should be distinguishable from heavier rainfall.
 
-130. Tornado Damage
+127. Heavy Rain — [Noticeable]
 
-Damage should depend on the simulated wind field, exposure, distance, and the durability of affected structures, subject to Bedrock limitations.
+Heavy precipitation should be associated with suitable cloud and storm structures.
 
-131. Tornado Sound
+128. Localized Precipitation — [Noticeable]
 
-Tornado sound should reflect distance and storm conditions without overwhelming other environmental audio.
+Rain should be distributed locally beneath precipitation-producing cloud regions rather than automatically covering the entire world.
 
-132. Tornado Dissipation
+129. Rain Shafts — [Noticeable]
 
-Tornadoes should weaken and disappear through a visual and simulation lifecycle instead of abruptly vanishing whenever possible.
+Dense precipitation regions should form recognizable rain shafts.
 
-133. Tornado Intensity Categories
+130. Wind-Displaced Rainfall — [Noticeable]
 
-EWA may introduce a custom gameplay intensity scale. It must not be presented as an official meteorological scale.
+Wind should be able to move precipitation away from the cloud's apparent horizontal position.
 
-134. Fujita and Enhanced Fujita Scales
+131. Virga — [Noticeable]
 
-The original Fujita and Enhanced Fujita rating systems use F0–F5 and EF0–EF5 respectively. Any EWA extension beyond these ranges would be fictional or custom.
+Precipitation may evaporate before reaching the ground.
 
-135. Custom Extreme Tornadoes
+132. Hail Formation — [Moderately noticeable]
 
-Extreme settings may allow exaggerated wind speeds and dimensions for sandbox experimentation. For example, a proposed 1,500 mph setting would be a fictional gameplay parameter, not a realistic ordinary tornado measurement.
+Hail growth should be associated with freezing and suitable updraft conditions.
 
-136. Landspouts
+133. Hail Properties — [Noticeable]
+
+Hailstones may vary in size, mass, density, velocity, trajectory, and impact behavior.
+
+134. Hail Accumulation — [Noticeable]
+
+Hail may accumulate on surfaces through a controlled approximation that avoids excessive world updates.
+
+135. Hail Impact — [Noticeable]
+
+Impact effects may depend on mass, velocity, and material durability. Damage must be configurable and performance-aware.
+
+136. Other Precipitation Types — [Noticeable]
+
+Additional precipitation types may be considered where their required environmental conditions can be represented.
+
+---
+
+PART IX — TORNADO SYSTEMS
+
+137. Tornado Formation — [Noticeable]
+
+Tornado formation should depend on suitable storm and atmospheric conditions. A rotating cloud or mesocyclone alone must not automatically create a tornado.
+
+138. Tornado Development — [Noticeable]
+
+Tornado development should emerge from interacting environmental conditions rather than an identical fixed sequence.
+
+139. Tornado Lifecycle — [Noticeable]
+
+Formation, development, intensification, weakening, and dissipation may be tracked as descriptive states, not mandatory scripted phases.
+
+140. Tornado Morphology — [Noticeable]
+
+Tornado geometry should adapt to simulated circulation. Potential visual forms include rope, cone, stovepipe, wedge, bowl-shaped, elephant-trunk-like, hourglass, irregular, multivortex, and other documented appearances. Morphology must not be treated as a guaranteed intensity measurement.
+
+141. Rope Tornadoes — [Noticeable]
+
+Narrow, elongated tornadoes may have curved and irregular structures.
+
+142. Cone Tornadoes — [Noticeable]
+
+Cone tornadoes may have a tapered circulation profile.
+
+143. Stovepipe Tornadoes — [Noticeable]
+
+Stovepipe tornadoes may have a comparatively broad column-like appearance.
+
+144. Wedge Tornadoes — [Noticeable]
+
+Wedge tornadoes may occupy a broad visible area. Apparent width must not be treated as a reliable measurement of intensity.
+
+145. Irregular Tornadoes — [Noticeable]
+
+Tornadoes should support changing width, asymmetrical edges, and nonuniform structures.
+
+146. Multivortex Tornadoes — [Noticeable]
+
+A parent circulation may contain smaller subvortices.
+
+147. Twin Tornadoes — [Noticeable]
+
+Multiple tornadoes may occur within the same general storm environment when conditions support separate circulations.
+
+148. Satellite Tornadoes — [Noticeable]
+
+A smaller tornado may occur near a larger circulation in a suitable storm scenario.
+
+149. Rain-Wrapped Tornadoes — [Noticeable]
+
+Precipitation may obscure tornado visibility.
+
+150. Tornado Motion — [Noticeable]
+
+Tornado movement should be associated with its parent storm and surrounding environmental steering field.
+
+151. Tornado Path — [Noticeable]
+
+The path should respond to movement and environmental conditions rather than being limited to a predetermined straight line.
+
+152. Tornado Sway — [Noticeable]
+
+Narrow tornadoes may bend or change orientation according to their simulated airflow.
+
+153. Tornado Wind Field — [Moderately noticeable]
+
+The system should approximate rotational wind behavior and spatial variation.
+
+154. Tornado Debris — [Noticeable]
+
+Debris selection should depend on nearby environmental materials, with properties such as material, size, mass, rotation, trajectory, collision, and falling behavior. Urban and forest environments should produce different visual debris patterns where feasible.
+
+155. Tornado Damage — [Noticeable]
+
+Damage should depend on simulated wind, exposure, duration, distance, and material durability. Player-built structures must be protected by configurable rules.
+
+156. Tornado Sound — [Noticeable]
+
+Audio should reflect distance and environmental conditions.
+
+157. Tornado Dissipation — [Noticeable]
+
+Tornadoes should gradually weaken and disappear when their supporting circulation diminishes.
+
+158. Tornado Intensity Categories — [Moderately noticeable]
+
+A custom gameplay intensity system may be developed, but it must not be presented as an official meteorological rating system.
+
+159. Fujita and Enhanced Fujita Scales — [Moderately noticeable]
+
+The official Fujita and Enhanced Fujita scales range from F0–F5 and EF0–EF5 respectively. Any custom extension must be clearly identified as fictional.
+
+160. Extreme Tornado Settings — [Noticeable]
+
+Exaggerated sandbox settings may be included for experimentation. For example, a proposed 1,500 mph setting is fictional gameplay, not a realistic ordinary tornado measurement.
+
+161. Landspouts — [Noticeable]
 
 Landspouts should be distinguished from typical supercell tornadoes because their formation mechanisms differ.
 
-137. Waterspouts
+162. Waterspouts — [Noticeable]
 
-Waterspouts may be represented over oceans, lakes, or other suitable bodies of water.
+Waterspouts may occur over suitable bodies of water.
 
-138. Dust Devils
+163. Dust Devils — [Noticeable]
 
-Dust devils may be included as a separate atmospheric or surface vortex phenomenon. They are not tornadoes.
+Dust devils should be treated as a separate surface-vortex phenomenon, not as tornadoes.
 
-139. Tornado Visibility
+164. Tornado Visibility — [Noticeable]
 
-Visibility should depend on condensation, debris, precipitation, lighting, and viewing conditions rather than requiring every tornado to have a fully opaque funnel.
-
-Part VIII — Wind, Ocean, and Tropical Weather
-
-140. Global Wind Movement
-
-Clouds and weather systems should follow a coherent wind model where practical, avoiding contradictory independent movement.
-
-141. Local Wind Fields
-
-Local wind may differ from the global wind because of terrain, storm outflow, convection, and other simulated influences.
-
-142. Wind Speed Effects
-
-Wind speed may influence cloud motion, debris, vegetation, particles, and selected gameplay interactions.
-
-143. Wind Direction Changes
-
-Wind direction should be adjustable over time to represent changing environmental conditions.
-
-144. Coastal Weather
-
-Coastal areas may have different weather behavior from inland areas, including simplified sea-breeze effects.
-
-145. Ocean Currents
-
-A future ocean system may approximate currents and their environmental interactions, but detailed ocean circulation would require a separate simulation design.
-
-146. Tropical Cyclones
-
-Tropical cyclones may include organized circulation, spiral rainbands, a central region, and other recognizable structural features.
-
-147. Tropical Cyclone Lifecycle
-
-The system may represent development, intensification, maturity, weakening, and dissipation.
-
-148. Cyclone Intensity Scale
-
-EWA may provide a custom cyclone classification for gameplay. The official Saffir–Simpson Hurricane Wind Scale ranges from Category 1 to Category 5; any additional categories must be labeled as custom.
-
-149. Storm Surge
-
-A simplified storm-surge effect may be explored for coastal environments, subject to world-simulation limits and safeguards against excessive block updates.
-
-Part IX — Volcanoes, Atmospheric Particles, and Environmental Hazards
-
-150. Volcanic Systems
-
-A future expansion may simulate volcanic activity as a geological system that interacts with the sky and atmosphere.
-
-151. Volcano Lifecycle
-
-A proposed lifecycle includes precursory activity, eruption, ash production, and a declining or dormant phase. Real volcanoes do not all follow one universal sequence.
-
-152. Eruption Modes
-
-Different eruption styles may be represented through configurable ash, gas, lava, and explosive visual effects.
-
-153. Volcanic Ash Clouds
-
-Ash clouds should have recognizable movement, opacity, and vertical development rather than behaving exactly like ordinary water clouds.
-
-154. Ash Transport
-
-Ash should move according to the simulated wind field and may spread over a large area.
-
-155. Ash Visibility
-
-Dense ash may reduce visibility according to concentration, distance, and lighting.
-
-156. Ash Exposure
-
-Optional gameplay effects may represent prolonged exposure to ash. Such effects should be clearly separated from real-world health guidance.
-
-157. Volcanic Lightning
-
-Lightning-like flashes may be included in suitable volcanic eruption scenarios as an approximation of electrical activity associated with ash and particle interactions.
-
-158. Other Atmospheric Hazards
-
-Additional researched phenomena may be considered if they can be represented meaningfully and efficiently within Bedrock.
-
-159. Fictional Hazard Modes
-
-Fictional hazards, including exaggerated fire vortices or imaginary tornado variants, must be kept separate from scientifically documented systems.
-
-Part X — Sky Events and Astronomical Visuals
-
-160. Solar Eclipses
-
-A future sky-event system may approximate the appearance of a solar eclipse. Accurate orbital mechanics and eclipse timing would require additional implementation.
-
-161. Lunar Eclipses and Blood Moons
-
-Lunar eclipses and reddish lunar appearances may be represented as distinct astronomical or visual events, with clear separation between ordinary lunar phases and eclipse conditions.
-
-162. Meteors, Meteor Showers, and Comets
-
-The sky may include meteors, meteor showers, and comet-like objects as astronomical events. These are not ordinary weather phenomena and should use a separate system.
-
-163. Solar and Lunar Halos
-
-Halos may be represented as optical effects associated with light interacting with ice crystals in the atmosphere under suitable conditions.
-
-164. Sun Dogs and Moon Dogs
-
-Parhelia, commonly called sun dogs, and corresponding lunar optical phenomena may be explored as specialized lighting effects.
-
-165. Night Sky
-
-The nighttime sky may include richer star fields, atmospheric darkness, and other visual details, subject to Minecraft's rendering capabilities.
-
-166. Milky Way and Andromeda
-
-A future visual expansion may represent the Milky Way and the Andromeda Galaxy. Their visibility and appearance must be treated as sky-rendering choices, not evidence of a complete astronomical simulation.
-
-Part XI — Atmospheric Control and Custom Scenarios
-
-167. Atmospheric Control
-
-A proposed control system may let players configure selected atmospheric variables, weather scenarios, cloud development, and event parameters. It should influence the simulated environment instead of merely spawning an isolated visual object.
-
-168. Natural and Immediate Modes
-
-Natural mode should allow selected phenomena to develop through their simulated lifecycle. Immediate mode may create a chosen scenario quickly for testing and sandbox play, while making clear that it bypasses normal development.
-
-169. Development, Testing, Credits, and Future Maintenance
-
-EWA must be developed through staged learning, implementation, testing, optimization, documentation, and release preparation. Contributors, scientific references, external assets, and AI assistance should be credited transparently. Compatibility, maintenance, and community contributions must be evaluated before release.
+Visibility should depend on condensation, debris, precipitation, lighting, and viewing conditions.
 
 ---
 
-Elephant Weather Add-on (EWA)
+PART X — WIND, COASTAL WEATHER, AND TROPICAL SYSTEMS
 
-Project Documentation — Continuation (Sections 240–269)
+165. Global Wind Movement — [Noticeable]
 
-240. Dynamic Cloud Boundary System
+Clouds and weather systems should move according to a coherent wind model.
 
-Cloud boundaries should change gradually as the simulated cloud grows, weakens, or interacts with surrounding atmospheric conditions.
+166. Regional and Local Wind — [Noticeable]
 
-241. Cloud Edge Turbulence
+Local wind may differ from regional and global wind because of terrain, convection, storm outflow, and other influences.
 
-Cloud edges may display subtle structural changes to suggest turbulent mixing between cloudy and surrounding air.
+167. Wind Effects — [Noticeable]
 
-242. Cloud Fragmentation
+Wind may influence clouds, debris, precipitation, vegetation, particles, and selected environmental interactions.
 
-Clouds should be able to separate into smaller formations when their simulated structure weakens or environmental conditions favor fragmentation.
+168. Wind Gusts — [Noticeable]
 
-243. Cloud Merging
+Wind speed and direction should be capable of changing over time.
 
-Nearby cloud formations may merge when their shapes and simulated atmospheric conditions make the interaction appropriate.
+169. Coastal Weather — [Noticeable]
 
-244. Cloud Layer Interaction
+Coastal environments may exhibit simplified sea-breeze and land-breeze circulation.
 
-Different cloud layers should be able to overlap at different apparent heights, creating more convincing sky depth.
+170. Ocean Currents — [Moderately noticeable]
 
-245. Cloud Shadow Approximation
+A future system may approximate ocean currents and their environmental interactions.
 
-Where Bedrock's rendering capabilities allow, cloud shadows should help communicate cloud thickness and the direction of illumination.
+171. Tropical Cyclones — [Noticeable]
 
-246. Cloud Perspective
+Tropical cyclones may contain organized circulation, spiral rainbands, a central region, and other recognizable structures.
 
-Cloud size and apparent shape should change with viewing distance and perspective without causing severe visual popping.
+172. Tropical Cyclone Development — [Noticeable]
 
-247. Cloud Horizon Integration
+Cyclone development should depend on suitable environmental conditions rather than arbitrary spawning alone.
 
-Distant clouds should blend into the horizon naturally, reducing obvious boundaries between the custom sky and the surrounding world.
+173. Tropical Cyclone Lifecycle — [Noticeable]
 
-248. Cloud Occlusion
+Development, intensification, maturity, weakening, and dissipation may be represented as descriptive states.
 
-Cloud structures should visually obscure portions of other cloud structures where appropriate, creating a stronger impression of depth.
+174. Cyclone Classification — [Moderately noticeable]
 
-249. Cloud Detail Levels
+The official Saffir–Simpson Hurricane Wind Scale ranges from Category 1 to Category 5. Additional EWA categories must be identified as custom gameplay classifications.
 
-The rendering system should investigate reducing small-scale detail at greater distances to improve performance.
+175. Storm Surge — [Noticeable]
 
-250. Adaptive Simulation Detail
-
-Cloud simulation complexity should be adjustable according to distance, importance, and available performance resources.
-
-251. Storm Anvil Evolution
-
-Anvil clouds should evolve with the simulated storm, including changes in horizontal spread, shape, and apparent thickness.
-
-252. Anvil Overspread
-
-Large storm anvils may gradually spread across the sky, allowing distant storm systems to influence the overall sky appearance.
-
-253. Anvil Shadowing
-
-Anvil clouds should create distinctive lighting and shading patterns where the rendering system supports them.
-
-254. Anvil Dissipation
-
-When a storm weakens, its anvil should gradually change and disperse instead of remaining permanently attached to an inactive storm.
-
-255. Shelf Cloud Evolution
-
-Shelf clouds should change their structure as the associated gust front advances and the storm's outflow evolves.
-
-256. Roll Cloud Motion
-
-Roll clouds should move and evolve as coherent horizontal formations rather than behaving like ordinary isolated cloud particles.
-
-257. Mountain Wave Interaction
-
-A future atmospheric model may approximate how airflow over mountains produces wave clouds and other terrain-associated formations.
-
-258. Orographic Cloud Changes
-
-Clouds near mountains should be able to form, change shape, or dissipate according to simplified terrain and airflow conditions.
-
-259. Local Weather Boundaries
-
-EWA may represent boundaries between different local weather conditions, such as the edge of a storm or a transition between cloudy and clearer skies.
-
-260. Weather Transition Blending
-
-Changes between weather states should be gradual where scientifically appropriate, avoiding abrupt visual switches.
-
-261. Regional Weather Variation
-
-Different parts of the world may experience different cloud and weather conditions if the required simulation can be implemented efficiently.
-
-262. Weather System Movement
-
-Organized weather systems should move coherently across the simulated environment rather than being recreated independently at every location.
-
-263. Weather Persistence
-
-Weather conditions should persist for a reasonable period according to the selected simulation model instead of changing randomly every few moments.
-
-264. Weather History
-
-A future system may retain limited information about previous atmospheric states to support smoother transitions and more coherent storm development.
-
-265. Atmospheric Debug Information
-
-Development tools should help display relevant simulated variables, such as wind direction, temperature, humidity, pressure, and storm lifecycle state.
-
-266. Debug Visualization
-
-Optional visual indicators may help the creator identify cloud boundaries, wind fields, storm regions, and other internal simulation elements during testing.
-
-267. Feature Isolation
-
-Major systems should be tested independently before being combined, making it easier to identify the cause of errors.
-
-268. Performance Regression Testing
-
-Changes to cloud rendering, storm logic, or particle behavior should be compared against earlier test results to detect performance regressions.
-
-269. Continuation and Documentation Integrity
-
-Future EWA documentation should continue from the latest section number, preserve previously established project decisions, and clearly distinguish proposed features from implemented and tested functionality.
+A simplified storm-surge effect may be explored for coastal environments.
 
 ---
 
-Technical Development Notes
+PART XI — FOG AND ATMOSPHERIC VISIBILITY
 
-Proposed Technical Architecture
+176. Fog Formation — [Noticeable]
 
-EWA may use a combination of:
+Fog should depend on suitable temperature, moisture, and atmospheric conditions.
 
-- Resource Pack (RP): Textures, models, materials, animations, sounds, and supported visual resources.
-- Behavior Pack (BP): Supported gameplay behavior, entities, items, and other behavior definitions.
-- JSON: Pack manifests, entity definitions, particle definitions, render controllers, and other supported configuration files.
-- JavaScript: Scripting for supported gameplay logic and simulation systems when the selected Bedrock version and APIs permit it.
-- Molang: Expression language used in supported animation, rendering, and behavior contexts.
+177. Radiation Fog — [Noticeable]
 
-These technologies have different responsibilities. They are not interchangeable, and every proposed feature must be checked against the actual capabilities of the target Bedrock version.
+Fog may form through surface cooling under suitable conditions.
 
-Rendering Limitations
+178. Advection Fog — [Noticeable]
 
-The particle-based volumetric approximation is a design proposal. It must be tested to determine whether it can produce sufficiently realistic clouds without excessive particle counts, visible repetition, unstable movement, or unacceptable frame-rate loss.
+Fog may develop when moist air moves over a cooler surface.
 
-True volumetric rendering, ray marching, custom shaders, and other advanced rendering methods must not be claimed as implemented unless the target platform supports the necessary technique and a working implementation has been verified.
+179. Upslope Fog — [Noticeable]
 
-Performance Strategy
+Air forced upward along terrain may cool and produce fog.
 
-The development process should investigate:
+180. Evaporation Fog — [Noticeable]
 
-- Particle budgets and adaptive particle density.
-- Visibility-based culling and restoration.
-- Simulation update frequency.
-- Efficient cloud movement and lifecycle updates.
-- Avoidance of unnecessary entity creation and deletion.
-- Limits on block updates and damage calculations.
-- Different quality settings for different devices.
-- Memory use, frame-time stability, and behavior during large storms.
+Fog may form when moisture enters relatively cooler air.
 
-Any culling method must preserve visual continuity as the player turns or moves. Performance improvements should be measured rather than assumed.
+181. Fog Density — [Noticeable]
 
-Testing and Quality Assurance
+Fog thickness should vary dynamically.
 
-Every new feature should be checked for:
+182. Fog Visibility — [Noticeable]
 
-1. Valid pack manifests and UUIDs.
-2. Supported engine and format versions.
-3. Correct JSON syntax and valid resource references.
-4. Correct entity, geometry, animation, and render-controller identifiers.
-5. Successful import and activation in Minecraft Bedrock.
-6. Correct behavior in a controlled test world.
-7. Mobile performance under realistic workloads.
-8. Interactions with other EWA systems.
-9. Regression testing after changes.
-10. Accurate documentation of known limitations.
+Visibility should decrease according to fog density and atmospheric conditions.
 
-A file importing successfully does not prove that its feature functions correctly in-game.
+183. Fog Movement — [Noticeable]
 
-Packaging and Release
+Wind and terrain should influence fog movement where appropriate.
 
-When a functional version exists, the project may be packaged as a ".mcaddon" or as separate resource and behavior packs, depending on the distribution plan.
+184. Fog and Ground Visibility — [Moderately noticeable]
 
-Release documentation should identify the tested Minecraft version, supported features, known issues, compatibility limitations, and changes from previous releases. Unique identifiers must be generated correctly, and any third-party assets must follow their applicable licenses.
+Ground-level fog should be managed separately from distant cloud visibility.
 
-Scientific References and Attribution
+185. Exposure Effects — [Moderately noticeable]
 
-Scientific claims should be checked against reliable sources such as meteorological agencies, scientific publications, educational institutions, and relevant technical documentation. External code, textures, models, sounds, and other assets must be credited and used according to their licenses.
-
-Project Development and AI Assistance
-
-EWA is an independently envisioned project developed by its creator, with ChatGPT assisting in planning, technical research guidance, scientific concept review, documentation, coding guidance, and troubleshooting.
-
-The project's direction, priorities, and creative vision are established by its creator. AI-assisted designs and code must still be reviewed, implemented, and tested in Minecraft Bedrock Edition before they can be considered functional.
-
-EWA remains a work in progress. Its planned features should not be interpreted as completed implementations, and its scientific approximations should not be represented as full real-world atmospheric simulations.
+Optional gameplay effects may be associated with prolonged exposure to selected environmental hazards. Ordinary short exposure to normal fog should not automatically trigger arbitrary penalties.
 
 ---
 
-Final Project Principle
+PART XII — VOLCANIC SYSTEMS AND ASH
 
-Build Elephant Weather Add-on step by step, learn the required technologies, prioritize scientifically grounded behavior and mobile performance, and document honestly what works, what remains experimental, and what has not yet been implemented.
+186. Volcanic Systems — [Noticeable]
 
+A future expansion may simulate volcanic activity as a geological system interacting with the atmosphere.
+
+187. Volcanic Eruptions — [Noticeable]
+
+Different eruption styles may be represented using configurable visual and environmental effects.
+
+188. Volcanic Ash Plumes — [Noticeable]
+
+Ash clouds should have recognizable vertical development, opacity, and movement. They must not behave exactly like ordinary water clouds.
+
+189. Ash Particle Properties — [Moderately noticeable]
+
+Ash particles may vary in size, concentration, and transport behavior.
+
+190. Ash Transport — [Noticeable]
+
+Ash should move according to global, regional, and local wind fields.
+
+191. Ash Visibility — [Noticeable]
+
+Visibility should decrease according to ash concentration, distance, and lighting.
+
+192. Ash Deposition — [Noticeable]
+
+Ash may accumulate on selected surfaces through an efficient approximation.
+
+193. Ash and Rain Interaction — [Moderately noticeable]
+
+Rain may interact with airborne and deposited ash.
+
+194. Ash Exposure — [Moderately noticeable]
+
+Optional gameplay effects may represent environmental exposure to volcanic ash. These effects must not be presented as real-world medical guidance.
+
+195. Volcanic Lightning — [Noticeable]
+
+Lightning-like flashes may be represented in suitable eruption scenarios as an approximation of electrical activity associated with ash and particle interactions.
+
+196. Fictional Environmental Hazards — [Noticeable]
+
+Fictional hazards must be clearly separated from scientifically documented phenomena.
+
+---
+
+PART XIII — CLIMATE AND LARGE-SCALE ATMOSPHERIC CIRCULATION
+
+197. Regional Climate — [Moderately noticeable]
+
+Different regions may have different temperature, humidity, wind, cloud, and precipitation characteristics.
+
+198. Seasonal Variation — [Noticeable]
+
+Seasonal changes may influence atmospheric conditions and weather patterns.
+
+199. Latitude Effects — [Moderately noticeable]
+
+Latitude may influence simulated temperature, sunlight, and atmospheric circulation.
+
+200. Global Atmospheric Circulation — [Moderately noticeable]
+
+A future system may approximate major global circulation patterns.
+
+201. Hadley Cells — [Moderately noticeable]
+
+The Hadley circulation may be represented through a simplified large-scale atmospheric model.
+
+202. Ferrel Cells — [Moderately noticeable]
+
+The Ferrel circulation may be included as part of an approximate global circulation system.
+
+203. Polar Cells — [Moderately noticeable]
+
+Polar circulation may be represented through simplified high-latitude atmospheric behavior.
+
+204. Monsoon Systems — [Noticeable]
+
+Monsoon patterns may influence seasonal wind and precipitation distribution.
+
+205. ENSO — [Moderately noticeable]
+
+El Niño and La Niña may be represented as large-scale climate variability scenarios, not ordinary local weather events.
+
+206. Climate Timescales — [Moderately noticeable]
+
+Climate behavior and short-term weather behavior must be treated as different timescales.
+
+207. Regional Weather Frequency — [Moderately noticeable]
+
+Regional climate may influence the frequency and characteristics of selected weather phenomena.
+
+208. Climate and Storm Interaction — [Moderately noticeable]
+
+Climate conditions may influence the environmental background in which storms develop.
+
+---
+
+PART XIV — ENVIRONMENTAL INTERACTIONS AND HYDROLOGY
+
+209. Terrain Interaction — [Noticeable]
+
+Elevation, slope, terrain shape, and surrounding geography may influence atmospheric and environmental systems.
+
+210. Forest Environments — [Noticeable]
+
+Forests may influence selected local environmental conditions and provide material for debris systems.
+
+211. Desert Environments — [Noticeable]
+
+Desert regions may exhibit different surface and atmospheric characteristics.
+
+212. Urban Environments — [Noticeable]
+
+Buildings and urban terrain may influence selected local wind and environmental interactions.
+
+213. Player-Built Structures — [Noticeable]
+
+Player-built structures may influence local environmental behavior where simulation scale and technical capabilities allow.
+
+214. Rainfall Accumulation — [Noticeable]
+
+Rainfall should contribute to a simplified environmental water-accumulation model.
+
+215. Surface Runoff — [Noticeable]
+
+Water movement should consider terrain slope and elevation.
+
+216. Drainage — [Moderately noticeable]
+
+A simplified drainage model may determine how accumulated water moves through the environment.
+
+217. Ponding — [Noticeable]
+
+Water may accumulate in low-lying areas.
+
+218. River Overflow — [Noticeable]
+
+Heavy rainfall may contribute to river overflow in suitable simulated environments.
+
+219. Flooding — [Noticeable]
+
+Flood behavior should consider rainfall, elevation, slope, surface properties, drainage, and nearby water systems.
+
+220. Building Interactions — [Noticeable]
+
+Flooding may interact with selected buildings and environmental structures.
+
+221. Environmental Damage — [Noticeable]
+
+Damage should depend on phenomenon intensity, exposure, material properties, and duration.
+
+222. Environmental Recovery — [Moderately noticeable]
+
+Selected environmental effects may recover over time. Player-built structures must not be automatically reset or restored without explicit system design.
+
+---
+
+PART XV — SKY EVENTS AND ASTRONOMICAL VISUALS
+
+223. Solar Eclipses — [Noticeable]
+
+A future sky-event system may approximate solar eclipse appearances.
+
+224. Lunar Eclipses — [Noticeable]
+
+Lunar eclipses should be represented separately from ordinary lunar phases.
+
+225. Blood Moon Appearance — [Noticeable]
+
+A reddish lunar appearance may be represented as a visual event where appropriate.
+
+226. Meteors — [Noticeable]
+
+Meteors may appear as separate astronomical events.
+
+227. Meteor Showers — [Noticeable]
+
+Meteor showers may produce multiple visible meteor events.
+
+228. Comets — [Noticeable]
+
+Comet-like objects may be included as sky events.
+
+229. Solar Halos — [Noticeable]
+
+Halos may be represented as optical effects associated with sunlight and atmospheric ice crystals.
+
+230. Lunar Halos — [Noticeable]
+
+Lunar halos may be represented as corresponding optical phenomena.
+
+231. Sun Dogs and Moon Dogs — [Noticeable]
+
+Parhelia and corresponding lunar optical effects may be explored as specialized atmospheric lighting phenomena.
+
+232. Night Sky — [Noticeable]
+
+The nighttime sky may include richer star fields and atmospheric darkness.
+
+233. Milky Way — [Noticeable]
+
+A future visual expansion may represent the Milky Way.
+
+234. Andromeda Galaxy — [Noticeable]
+
+The Andromeda Galaxy may be included as a distant sky-rendering feature. These visuals do not prove that EWA has a complete orbital or astronomical simulation.
+
+---
+
+PART XVI — WEATHER OBSERVATION AND INSTRUMENTS
+
+235. Weather Stations — [Noticeable]
+
+Weather stations may measure simulated temperature, humidity, pressure, wind, and rainfall.
+
+236. Anemometers — [Noticeable]
+
+Anemometers should display wind measurements derived from the same simulated atmosphere.
+
+237. Barometers — [Noticeable]
+
+Barometers may display atmospheric pressure.
+
+238. Rain Gauges — [Noticeable]
+
+Rain gauges may measure simulated precipitation accumulation.
+
+239. Radiosondes — [Noticeable]
+
+A radiosonde system may provide vertical atmospheric measurements.
+
+240. Weather Radar — [Noticeable]
+
+Radar should display an approximation of precipitation reflectivity and storm structure.
+
+241. Doppler Velocity — [Noticeable]
+
+A Doppler mode may represent radial motion toward or away from the radar.
+
+242. Storm Tracking — [Noticeable]
+
+Radar may track storm movement using successive observations.
+
+243. Mesocyclone Indicators — [Noticeable]
+
+Radar may display rotational signatures associated with suitable storm structures.
+
+244. Hook Echo — [Noticeable]
+
+A hook-like reflectivity structure may be represented where the simulated storm produces a suitable pattern.
+
+245. Hail Indicators — [Noticeable]
+
+Radar may display regions associated with possible hail. Radar signatures are indicators, not definitive proof of tornadoes or hail.
+
+246. Satellite Observation — [Noticeable]
+
+A future satellite system may display cloud coverage and selected atmospheric patterns.
+
+247. Lightning Detection — [Noticeable]
+
+Lightning detectors may display detected electrical events.
+
+248. Shared Atmospheric Data — [Moderately noticeable]
+
+Observation tools should use the same underlying simulated atmospheric data as the weather systems, rather than generating unrelated measurements.
+
+---
+
+PART XVII — CLOUD VISIBILITY, DISTANCE, AND RENDERING MANAGEMENT
+
+249. Cloud Visibility Range — [Noticeable]
+
+Cloud visibility should be managed separately from Minecraft's land render distance. The sky may show distant clouds even when terrain is no longer visible.
+
+250. Atmospheric Cloud Fog — [Noticeable]
+
+Distant clouds should gradually blend into the atmosphere through an appropriate cloud-visibility fog model, distinguishable from ground-level fog.
+
+251. Full Structural Detail — [Noticeable]
+
+The design goal is to preserve the same underlying cloud structural model regardless of distance. Actual rendering detail may still be constrained by Bedrock performance and rendering capabilities.
+
+252. Visibility-Based Rendering — [Moderately noticeable]
+
+Cloud components that cannot be seen by the player may be excluded from rendering. This is rendering culling, not permanent deletion of atmospheric data.
+
+253. Cloud Data Preservation — [Moderately noticeable]
+
+Cloud identity, geometry state, and relevant simulation information should remain available while rendering is skipped. Visible clouds should be restored from preserved state when they re-enter the viewing area.
+
+254. Cloud Occlusion — [Noticeable]
+
+Cloud structures should visually obscure other cloud structures where appropriate.
+
+255. Horizon Integration — [Noticeable]
+
+Distant clouds should blend naturally into the horizon.
+
+256. Cloud Perspective — [Noticeable]
+
+Cloud appearance should respond to viewing perspective without sudden visual popping.
+
+257. Cloud Boundary System — [Noticeable]
+
+Cloud boundaries should change gradually as the cloud develops or interacts with surrounding atmospheric conditions.
+
+258. Cloud Edge Turbulence — [Moderately noticeable]
+
+Cloud edges may display subtle structural changes representing turbulent mixing.
+
+259. Cloud Fragmentation — [Noticeable]
+
+Clouds should be capable of separating into smaller formations when their structure weakens or environmental conditions support fragmentation.
+
+260. Cloud Merging — [Noticeable]
+
+Nearby clouds may merge when their geometry and atmospheric conditions make the interaction appropriate.
+
+261. Cloud Layer Interaction — [Noticeable]
+
+Different cloud layers should overlap at different apparent heights.
+
+262. Cloud Shadow Approximation — [Noticeable]
+
+Cloud shadows should help communicate thickness and illumination direction where Bedrock supports the required effects.
+
+263. Anvil Evolution — [Noticeable]
+
+Anvils should evolve with the parent storm, including changes in horizontal spread, shape, and apparent thickness.
+
+264. Anvil Overspread — [Noticeable]
+
+Large anvils may gradually spread across the sky.
+
+265. Anvil Dissipation — [Noticeable]
+
+Anvils should gradually weaken and disperse as their supporting storm structure changes.
+
+266. Shelf Cloud Evolution — [Noticeable]
+
+Shelf clouds should evolve with their associated gust fronts and outflow boundaries.
+
+267. Roll Cloud Motion — [Noticeable]
+
+Roll clouds should move as coherent horizontal formations.
+
+268. Mountain Wave Interaction — [Noticeable]
+
+Airflow over mountains may produce wave clouds and related formations.
+
+269. Orographic Cloud Changes — [Noticeable]
+
+Clouds near mountains should form and evolve according to simplified terrain and airflow conditions.
+
+---
+
+PART XVIII — ATMOSPHERIC CONTROL AND CUSTOM SCENARIOS
+
+270. Atmospheric Control — [Noticeable]
+
+Players may eventually be able to configure selected atmospheric variables and weather scenarios.
+
+271. Natural Simulation Mode — [Noticeable]
+
+Natural mode should allow weather phenomena to develop according to the simulated atmospheric environment.
+
+272. Immediate Scenario Mode — [Noticeable]
+
+Immediate mode may create selected scenarios quickly for testing and sandbox play. It must be identified as bypassing some or all natural development processes.
+
+273. Phenomenon Controls — [Noticeable]
+
+Players may enable or disable selected phenomena. Disabling one phenomenon should not automatically force another to occur.
+
+274. Natural Occurrence — [Moderately noticeable]
+
+Phenomenon occurrence should depend on environmental conditions, regional climate, season, and other relevant simulated variables.
+
+275. Custom Scenario Parameters — [Noticeable]
+
+Custom parameters may be available for testing and experimentation. Fictional values must be identified as gameplay settings.
+
+---
+
+PART XIX — AUDIO AND ENVIRONMENTAL FEEDBACK
+
+276. Dynamic Weather Audio — [Noticeable]
+
+Audio should respond to phenomenon type, distance, intensity, and environmental conditions.
+
+277. Spatial Thunder — [Noticeable]
+
+Thunder should have directional and distance-related behavior where technically feasible.
+
+278. Rain Audio — [Noticeable]
+
+Rain audio should vary according to precipitation intensity and environmental context.
+
+279. Wind Audio — [Noticeable]
+
+Wind sound should respond to simulated wind strength and selected surroundings.
+
+280. Tornado Audio — [Noticeable]
+
+Tornado audio should reflect distance and the surrounding storm environment.
+
+281. Environmental Acoustics — [Moderately noticeable]
+
+Buildings and terrain may influence audio through simplified environmental approximations.
+
+282. Audio Performance — [Subtle]
+
+Sound effects should avoid excessive repetition and unnecessary simultaneous playback.
+
+---
+
+PART XX — ATMOSPHERIC DATA AND SIMULATION ARCHITECTURE
+
+283. Global Atmospheric Data — [Moderately noticeable]
+
+Global state should represent broad atmospheric conditions.
+
+284. Regional Atmospheric Data — [Moderately noticeable]
+
+Regional state should represent conditions across larger local areas.
+
+285. Local Atmospheric Data — [Moderately noticeable]
+
+Local state should represent smaller-scale environmental and weather conditions.
+
+286. Interconnected Data — [Moderately noticeable]
+
+Global, regional, and local atmospheric states should influence one another where the model supports those relationships.
+
+287. Dynamic Properties — [Subtle]
+
+Minecraft Dynamic Properties may be investigated for storing selected persistent simulation information. They are a storage mechanism, not a complete atmospheric simulation engine.
+
+288. Spatial Management — [Subtle]
+
+The system should investigate organizing atmospheric information into manageable spatial regions.
+
+289. Staggered Updates — [Subtle]
+
+Simulation tasks should be distributed over time instead of updating every system simultaneously.
+
+290. Update Budgets — [Subtle]
+
+Each simulation subsystem should have a defined computational budget.
+
+291. Simulation Scheduling — [Subtle]
+
+Different systems may require different update frequencies. Cloud appearance, wind state, storm structure, and precipitation do not necessarily need identical update intervals.
+
+292. Data Persistence — [Subtle]
+
+Important atmospheric state should be preserved when practical.
+
+293. Chunk and Region Management — [Subtle]
+
+Simulation management should account for loaded areas, unloaded areas, and the limitations of Bedrock's world access.
+
+294. Avoiding Unnecessary Entities — [Subtle]
+
+The system should avoid creating excessive entities when a more efficient supported representation is available.
+
+295. Avoiding Excessive Block Updates — [Subtle]
+
+Damage, flooding, accumulation, and environmental interactions must use controlled update budgets.
+
+---
+
+PART XXI — ADAPTIVE PERFORMANCE PRESETS
+
+296. Performance Presets — [Noticeable]
+
+EWA proposes four primary simulation presets: Lite, Balanced, High, and Ultra. They should retain the same general atmospheric model and core simulation concepts while adjusting simulation detail, update frequency, and resource-related parameters.
+
+297. Lite — [Noticeable]
+
+Designed to reduce computational and rendering demands, especially on less powerful devices.
+
+298. Balanced — [Noticeable]
+
+Designed as a general-purpose configuration balancing visual quality, simulation behavior, and performance.
+
+299. High — [Noticeable]
+
+Designed to allow greater simulation and visual detail on capable devices.
+
+300. Ultra — [Noticeable]
+
+Designed for devices that can handle the highest available simulation and visual workload. Ultra must not be assumed to work well on every mobile device.
+
+301. User-Controlled Settings — [Noticeable]
+
+Players should be able to select their preferred preset where the implementation supports it.
+
+302. Performance Monitoring — [Moderately noticeable]
+
+The development process should measure frame rate, frame time, memory consumption, and simulation cost.
+
+303. Performance Target — [Moderately noticeable]
+
+A previous design discussion proposed keeping additional performance cost around 5–10 FPS or less. This is an optimization target, not a guarantee. Actual performance must be measured on supported devices and Minecraft versions.
+
+304. Performance and Structural Consistency — [Noticeable]
+
+Cloud structural identity should remain consistent across performance presets wherever technically possible.
+
+Lower presets may reduce update frequency, particle density, rendering distance, secondary effects, and other expensive visual operations. However, performance optimization should avoid making a cloud suddenly change identity, jump to a different shape, lose its atmospheric state, or visibly regenerate when the player changes settings.
+
+The underlying simulation model should remain conceptually consistent. Lower settings may use cheaper approximations, but those approximations must be documented honestly.
+
+---
+
+PART XXII — CREATOR DEVELOPMENT AND LEARNING ROADMAP
+
+305. Creator Learning, Development Preparation, and Toolchain — [Noticeable]
+
+EWA is being developed as a long-term independent learning and creative project by a young creator from Indonesia.
+
+In 2026, the creator is 11 years old and currently in Grade 6 of elementary school. The creator is still learning and planning the project. This is an important part of EWA's development history and must be represented honestly.
+
+Before attempting to implement the full atmospheric simulation architecture, the creator needs to study and practice the foundational technologies required for Minecraft Bedrock add-on development.
+
+A. Required Programming and Data Skills
+
+JSON
+
+JSON is essential for many Minecraft Bedrock resource-pack and behavior-pack definitions.
+
+The learning objectives include:
+
+- Understanding JSON objects and arrays.
+- Understanding strings, numbers, booleans, and null values.
+- Learning correct syntax and structure.
+- Understanding identifiers and namespaces.
+- Reading and editing manifest files.
+- Understanding resource and behavior definitions.
+- Learning how to diagnose malformed JSON.
+- Understanding version fields and dependency declarations.
+- Organizing complex JSON files clearly.
+
+Molang
+
+Molang is a Minecraft expression language used in supported resource-pack systems.
+
+The learning objectives include:
+
+- Understanding basic expressions.
+- Learning variables and queries.
+- Understanding mathematical operations.
+- Learning conditional expressions.
+- Understanding animation and rendering-related expressions.
+- Learning how supported Molang queries differ between contexts.
+- Testing expressions in small, controlled examples.
+- Avoiding assumptions that every Molang feature is available in every Bedrock context.
+
+JavaScript
+
+JavaScript is important for supported Bedrock scripting systems.
+
+The learning objectives include:
+
+- Understanding variables and data types.
+- Learning functions.
+- Understanding conditions and loops.
+- Learning arrays and objects.
+- Understanding events and callbacks.
+- Learning basic error handling.
+- Understanding supported Minecraft Script API modules.
+- Learning entity, world, and block interactions.
+- Understanding scheduling and performance.
+- Learning how to organize code into manageable modules.
+
+JavaScript implementation must use APIs supported by the actual target Minecraft version. Ordinary browser JavaScript capabilities must not be assumed to exist inside the Minecraft scripting environment.
+
+B. Current Development Applications
+
+The creator currently uses the following applications:
+
+Purpose| Application
+Coding and editing source files| VSCO Droid
+File management| FS File Manager
+Block textures and other image assets| Pixel Studio
+Texture editing and additional artwork| ibis Paint
+
+These are the creator's currently identified tools, not a guarantee that every application provides every feature needed by EWA.
+
+C. Recommended Learning Order
+
+1. Learn basic JSON syntax and structure.
+2. Practice editing simple Bedrock manifests.
+3. Learn the organization of resource packs and behavior packs.
+4. Study Molang fundamentals.
+5. Practice simple texture and visual-asset workflows.
+6. Learn JavaScript fundamentals.
+7. Study the supported Minecraft Bedrock Script API.
+8. Build small independent experiments.
+9. Test each experiment in a controlled world.
+10. Document errors, compatibility, and performance.
+11. Combine only systems that have been independently tested.
+12. Gradually develop EWA's larger architecture.
+
+D. Small Experiments Before Large Systems
+
+The creator should not attempt to implement every EWA feature at once.
+
+A sensible learning progression is:
+
+- A valid resource pack.
+- A valid behavior pack.
+- A simple custom texture.
+- A basic custom entity or supported visual representation.
+- A small script responding to an event.
+- A controlled environmental variable.
+- A simple weather-related visual experiment.
+- A small interaction between two systems.
+- A documented performance test.
+- A more complex integrated prototype.
+
+Each experiment should have a clear objective and acceptance criteria.
+
+E. Bedrock Compatibility
+
+Every experiment must be checked against the actual Minecraft Bedrock version being targeted.
+
+The existence of an experimental toggle does not guarantee that a particular API or feature is supported.
+
+The creator has identified several available experimental options, but new experimental features should be investigated and discussed before being introduced into the project.
+
+Version compatibility, minimum engine requirements, manifest formatting, Script API availability, rendering behavior, and device performance must be verified rather than assumed.
+
+F. Mobile Development Constraints
+
+The creator's intended development environment includes Android.
+
+The long-term target includes mobile-friendly performance, with particular attention to devices around the 8 GB RAM class.
+
+Memory extension or virtual RAM must not be treated as equivalent to physical RAM.
+
+A successful experiment on a single device does not establish universal mobile compatibility.
+
+G. Independent Development and AI Assistance
+
+ChatGPT is used as an AI-assisted planning, explanation, research, and technical guidance tool.
+
+AI assistance does not replace the creator's responsibility to understand, test, and verify the implementation.
+
+The creator remains responsible for project decisions, original assets, testing, and the final development direction.
+
+Important: Being 11 years old and still learning does not mean the entire project must be completed immediately. EWA is a long-term learning project. The creator can progress gradually, and the documentation should reflect actual progress instead of pretending that advanced systems are already operational.
+
+---
+
+DEVELOPMENT ROADMAP
+
+The following roadmap is a proposed order of work, not a confirmed schedule.
+
+Stage 1 — Foundations
+
+- Learn JSON.
+- Learn Molang.
+- Learn JavaScript.
+- Understand Bedrock resource packs and behavior packs.
+- Understand manifests, identifiers, and dependencies.
+- Practice basic debugging.
+
+Stage 2 — Small Technical Experiments
+
+- Test a simple resource pack.
+- Test a simple behavior pack.
+- Create and import original textures.
+- Test supported entities and particles.
+- Test basic scripting.
+- Record compatibility and performance.
+
+Stage 3 — Basic Atmospheric Model
+
+- Define atmospheric variables.
+- Establish a manageable spatial representation.
+- Test temperature and humidity values.
+- Test wind direction and speed.
+- Establish simple regional and local data.
+
+Stage 4 — Basic Weather Systems
+
+- Develop simple cloud behavior.
+- Test localized precipitation.
+- Investigate fog and visibility.
+- Test wind and environmental responses.
+- Establish event continuity.
+
+Stage 5 — Advanced Weather Systems
+
+- Investigate organized thunderstorms.
+- Develop storm observation.
+- Explore advanced cloud morphology.
+- Investigate lightning and severe weather.
+- Test environmental interactions.
+
+Stage 6 — Optimization and Integration
+
+- Measure frame time.
+- Measure memory consumption.
+- Test different simulation workloads.
+- Investigate culling and scheduling.
+- Test mobile performance.
+- Integrate only compatible and reliable systems.
+
+Stage 7 — Documentation and Distribution
+
+- Document implemented features.
+- Record supported Minecraft versions.
+- Provide known limitations.
+- Prepare installation instructions.
+- Test the final package.
+- Prepare distribution only when the project is genuinely ready.
+
+---
+
+TECHNICAL LIMITATIONS AND SCIENTIFIC HONESTY
+
+EWA's vision is ambitious, but Minecraft Bedrock is not a general-purpose scientific atmospheric modeling platform.
+
+Several real-world processes may require substantial simplification.
+
+Examples include:
+
+- Full three-dimensional atmospheric fluid dynamics.
+- High-resolution cloud microphysics.
+- True volumetric ray marching.
+- Physically accurate cloud self-shadowing.
+- Full electromagnetic storm simulation.
+- Realistic terrain-driven hydrological modeling.
+- Complete global climate simulation.
+- High-resolution radar signal processing.
+- Fully physical debris dynamics.
+
+A visual approximation may resemble a real phenomenon without reproducing the complete underlying physics.
+
+For example, a cloud may visually resemble a cumulonimbus while its internal growth is controlled by a simplified model.
+
+That distinction must remain explicit.
+
+---
+
+PERFORMANCE AND COMPATIBILITY POLICY
+
+EWA should prioritize:
+
+1. Stable frame time.
+2. Controlled memory use.
+3. Limited unnecessary entities.
+4. Efficient particle usage.
+5. Staggered simulation updates.
+6. Controlled block updates.
+7. Regional data management.
+8. Rendering culling where supported.
+9. Persistent atmospheric state.
+10. Compatibility with the targeted Bedrock version.
+
+No performance target should be advertised as achieved until it has been measured.
+
+The Lite, Balanced, High, and Ultra presets are design proposals. Their final behavior must be determined through implementation and testing.
+
+---
+
+DOCUMENTATION RULES
+
+Every major feature should eventually have:
+
+- A feature identifier.
+- A clear description.
+- Its scientific basis.
+- Its intended player-visible behavior.
+- Its visibility classification.
+- Its technical dependencies.
+- Its compatibility requirements.
+- Its performance considerations.
+- Its implementation status.
+- Its testing conditions.
+- Its known limitations.
+
+A planned feature must not be described as implemented.
+
+An experimental feature must not be described as completed.
+
+A working prototype must not be described as a fully validated scientific simulation.
+
+---
+
+PROJECT SCALE AND FUTURE EXPANSION
+
+The 305 numbered entries in this document establish the current foundational project scope.
+
+They do not represent the complete EWA vision.
+
+There are still many additional features, subsystems, interactions, environmental processes, rendering ideas, simulation methods, observation tools, and technical systems that may be documented in future expansions.
+
+The broader project concept contains potentially thousands of individual feature ideas and system components.
+
+Those future ideas should be organized, reviewed, checked for scientific plausibility, evaluated for Bedrock feasibility, and prioritized according to development resources.
+
+A large feature count does not automatically mean a better add-on. Each feature must have a clear purpose, a realistic implementation path, and a justified place in the overall architecture.
+
+---
+
+FINAL PROJECT STATEMENT
+
+Elaphants Weather Add-on is a long-term independent Minecraft Bedrock project created with the ambition of bringing a more interconnected, scientifically informed, and visually immersive atmospheric experience into the game.
+
+The creator is currently 11 years old in 2026, in Grade 6, and still learning the foundational technologies needed to begin implementation.
+
+The immediate priority is not to rush into building thousands of features.
+
+The immediate priority is to learn JSON, Molang, and JavaScript, understand Minecraft Bedrock's technical systems, practice with the available applications, and gradually turn the documented ideas into small working experiments.
+
+EWA's development should remain honest, gradual, technically informed, and realistic about its limitations.
+
+The project may become large, but it should be built one reliable step at a time.
+
+Current documented scope: 0–305.
+
+Future scope: Many additional features and systems remain to be documented.
+
+Current implementation status: Planning and learning.
+
+Release date: Not confirmed.
+
+---
+
+CREATOR'S NOTE
+
+This project is still a work in progress at the planning and learning level.
+
+I am an 11-year-old Grade 6 student in 2026, and I still need to learn JSON, Molang, and JavaScript before I can properly begin developing the systems described in this document.
+
+My current applications are:
+
+- VSCO Droid — coding and editing.
+- FS File Manager — file management.
+- Pixel Studio — block textures and other image assets.
+- ibis Paint — texture editing and additional artwork.
+
+There are still thousands of potential features and system ideas that may eventually become part of EWA. They will be documented and developed gradually as my knowledge and technical capabilities improve.
+
+I know the project is ambitious. I also know that I still have a lot to learn. That is part of the journey.
+
+Thank you for following the development of EWA.
+
+And don't forget this project! 🌩️🌪️
+
+See you again later.
+
+Goodbye, and see you next time! 👋😭
+
+EWA — Elaphants Weather Add-on
+
+An independent project from Indonesia.
